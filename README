@@ -3,5 +3,10 @@
 try golang + redis env
 thanks for http://unknownplace.org/archives/golang-development-enviroment-with-docker.html
 
-
+- clone this repo
+- run docker-compose
+```
+docker-compose up
+```
+- access http://127.0.0.1:5000/
 
