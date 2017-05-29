@@ -1,0 +1,14 @@
+app:
+  build: .
+  ports:
+    - "5000:5000"
+  links:
+    - redis
+  volumes:
+    - ".:/go/src/app"
+  volumes_from:
+    - gopath
+  command: go run main.go
+
+redis:
+  image: redis
